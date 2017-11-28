@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>手风琴</title>
+	<style>
+	.content{
+		width: 960px;
+		margin: 0 auto;
+	}
+	.content:after{
+		content: '';
+		clear: both;
+		display: block;
+	}
+	.content div{
+		float: left;
+		width: 200px;
+		height: 200px;
+		border-radius:10px;
+		margin-left: -20px;
+		transition:all 1s;
+	}
+	.content:hover div{
+		width: 60px;
+	}
+	.content div:hover{
+		width: 720px;
+	}
+	.box1{
+		background: pink;
+	}
+	.box2{
+		background: lightblue;
+	}
+	.box3{
+		background: #06CD3E;
+	}
+	.box4{
+		background: #FF7634;
+	}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<div class="box3">3</div>
+		<div class="box4">4</div>
+	</div>
+</body>
+</html>
